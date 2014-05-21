@@ -1,0 +1,18 @@
+Push-button-sensor
+==================
+
+remote coding for robot
+
+#pragma config(Sensor, dgtl6,  touchSensor,    sensorTouch)
+#pragma config(Motor,  port1,           right,         tmotorVex393_HBridge, openLoop, reversed)
+#pragma config(Motor,  port10,          left,          tmotorVex393_HBridge, openLoop)
+
+task main()
+{
+ while(1 == 1)
+ {
+ motor[left] = vexRT[Ch3] / 2;
+ motor[right]= vexRT[Ch2] / 2;
+ }
+
+}
